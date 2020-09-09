@@ -43,3 +43,18 @@ background-size: cover;
     column-count: 2;
   }
 }
+
+.social-links{
+   text-align: center;
+}
+
+.social-links li {
+     display: inline;
+     text-decoration: none; 
+     text-align: bottom;
+}
+
+.social-links i {
+    font-size: 150%;
+    color: #f96b6b;
+}
