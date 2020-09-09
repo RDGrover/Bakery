@@ -1,0 +1,34 @@
+body {
+    background: #ffeaaa;
+}
+
+
+.callout-container {
+    height: 100vh;
+    background: url(""https://user-images.githubusercontent.com/69968071/92534955-08e71200-f22e-11ea-8e5b-f41db898cd8a.jpg"") no-repeat center center fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+     -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+background-size: cover;
+}
+
+
+#picture {
+    clear: both;
+    column-count: 3;
+    column-gap: 0px;
+}
+
+#picture img {
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+   #picture {
+    column-count: 2;
+  }
+}
