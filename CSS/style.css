@@ -5,7 +5,8 @@ body {
 
 .callout-container {
     height: 100vh;
-    background: url(""https://user-images.githubusercontent.com/69968071/92534955-08e71200-f22e-11ea-8e5b-f41db898cd8a.jpg"") no-repeat center center fixed;
+    background: url(https://user-images.githubusercontent.com/69968071/92534955-08e71200-f22e-11ea-8e5b-f41db898cd8a.jpg) no-repeat center center fixed;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,6 +17,16 @@ body {
 background-size: cover;
 }
 
+.btn-light-purple {
+    background-color: #e1b9e0;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.btn-light-purple:hover {
+    background-color: #ffffff;
+    color: #e1b9e0;
+}
 
 #picture {
     clear: both;

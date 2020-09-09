@@ -20,6 +20,10 @@
       href="https://fonts.googleapis.com/css2?family=Kufam&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="CSS/style.css" type="text/css" />
   </head>
 
@@ -30,25 +34,30 @@
     >
       <a
         href="index.html"
-        class="navbar-brand text-uppercase font-weight-bold"
-        style="font-size: 35px;"
+        class="navbar-brand text-uppercase"
+        style="
+          font-size: 200%;
+          font-family: 'Lobster', cursive;
+          color: #f96b6b;
+        "
         >Greedy Cakes</a
-      > 
+      >
       <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Togglenavigation"
-          style="border: 0; background-color: #c1a4c1;"
+        aria-expanded="false"
+        aria-label="Togglenavigation"
+        style="border: 0; background-color: #c1a4c1;"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-    
-      <div class="navbar-collapse collapse " id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto">
+
+      <div class="navbar-collapse collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto"
+        style="font-family: Kufam;">
           <li class="navbar-item mr-2 active">
             <a class="nav-link" href="index.html">Home</a>
           </li>
@@ -56,47 +65,47 @@
             <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="navbar-item mr-2">
-            <a class="nav-link" href="/">About Us</a>
+            <a class="nav-link" href="about-us.html">About Us</a>
           </li>
           <li class="navbar-item mr-2">
-            <a class="nav-link" href="/">Order</a>
+            <a class="nav-link" href="order.html">Order</a>
           </li>
         </ul>
       </div>
     </nav>
-      <article>
-        <!--Callout-->
-        <div class="callout-container container-fluid mt-5">
-          <section
-            class="callout jumbotron text-center"
-            style="background-color: transparent;"
+    <article>
+      <!--Callout-->
+      <div class="callout-container container-fluid mt-5">
+        <section
+          class="callout jumbotron text-center"
+          style="background-color: transparent;"
+        >
+          <h1>The finest cakes, made to order.</h1>
+          <p class="font-weight-bold">
+            Custom cakes available for <em>birthdays</em>, <em>weddings</em> and
+            any <em>special occassion</em>.
+          </p>
+          <p class="lead">
+            Get in contact with your details and your chosen design or browse
+            our gallery for inspiration!
+          </p>
+          <button
+            class="btn btn-lg btn-light-purple mt-2"
+            data-toggle="modal"
+            data-target="#contactUsModal"
           >
-            <h1>The finest cakes, made to order.</h1>
-            <p class="font-weight-bold">
-              Custom cakes available for <em>birthdays</em>,
-              <em>weddings</em> and any <em>special occassion</em>.
-            </p>
-            <p class="lead">
-              Get in contact with your details and your chosen design or browse
-              our gallery for inspiration!
-            </p>
-            <button
-              class="btn btn-lg btn-outline-dark mt-2"
-              data-toggle="modal"
-              data-target="#contactUsModal"
-            >
-              Contact Us
-            </button>
-            <br />
-            <a href="gallery.html" class="btn btn-lg btn-outline-dark mt-2">
-              Browse Our Gallery
-            </a>
-          </section>
-        </div>
-        <!--/callout-->
+            Contact Us
+          </button>
+          <br />
+          <a href="gallery.html" class="btn btn-lg btn-light-purple mt-4">
+            Browse Our Gallery
+          </a>
+        </section>
+      </div>
+      <!--/callout-->
 
-        <!--Reviews-->
-        <div class="container">
+      <!--Reviews-->
+      <div class="container">
         <section>
           <h2>Reviews</h2>
           <div class="row">
@@ -148,10 +157,10 @@
             </div>
           </div>
         </section>
-        </div>
+      </div>
 
-        <!--/reviews-->
-      </article>
+      <!--/reviews-->
+    </article>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -186,25 +195,44 @@
             </button>
           </div>
           <div class="modal-body">
-          <div class="form-container">
-            <form class="was-validated">
-            <div class="row">
-                <div class="col-6">
-            <input type="text" class="form-control is-invalid" required placeholder="First Name">
+            <div class="form-container">
+              <form class="was-validated">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      type="text"
+                      class="form-control is-invalid"
+                      required
+                      placeholder="First Name"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="text"
+                      class="form-control is-invalid"
+                      required
+                      placeholder="Last Name"
+                    />
+                  </div>
+                  <div class="form-group col-12 mt-3">
+                    <input
+                      type="email"
+                      class="form-control is-invalid"
+                      required
+                      placeholder="Email Address"
+                    />
+                  </div>
+                  <div class="form-group col-12">
+                    <input
+                      type="text"
+                      class="form-control is-invalid"
+                      required
+                      placeholder="Your message"
+                    />
+                  </div>
+                </div>
+              </form>
             </div>
-            <div class="col-6">
-            <input type="text" class="form-control is-invalid" required placeholder="Last Name">
-            </div>
-            <div class="form-group col-12 mt-3">
-            <input type="email" class="form-control is-invalid" required placeholder="Email Address">
-            </div>
-            <div class="form-group col-12">
-            <input type="text" class="form-control is-invalid" required placeholder="Your message">
-            </div>
-            </div>
-            </form>
-
-          </div>
           </div>
           <div class="modal-footer">
             <button
