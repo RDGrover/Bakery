@@ -4,7 +4,7 @@ body {
 
 
 .callout-container {
-    height: 100vh;
+    height: 80vh;
     background: url(https://user-images.githubusercontent.com/69968071/92534955-08e71200-f22e-11ea-8e5b-f41db898cd8a.jpg) no-repeat center center fixed;
     color: #ffffff;
     display: flex;
