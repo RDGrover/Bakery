@@ -28,6 +28,20 @@ background-size: cover;
     color: #e1b9e0;
 }
 
+.btn-dark-purple {
+    background-color: #e1b9e0;
+    color: #c5c5c5;
+}
+
+.review-container {
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+
+.media {
+    padding-top: 45px;
+}
+
 #picture {
     clear: both;
     column-count: 3;
@@ -44,6 +58,24 @@ background-size: cover;
   }
 }
 
+.divider {
+    width: 40%;
+    background-color: #e1b9e0;
+    height: 4px;
+}
+
+.features-container{
+     padding-bottom: 50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-container {
+    background-color:#f8a7ffef;
+    padding-bottom: 10px;
+}
+
 .social-links{
    text-align: center;
 }
@@ -58,3 +90,4 @@ background-size: cover;
     font-size: 150%;
     color: #f96b6b;
 }
+
